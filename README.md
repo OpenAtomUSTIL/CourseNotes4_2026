@@ -10,7 +10,7 @@
 - **授课**：听小昕碎碎念
 - **记录**：凡尘
 - **内容**：格式化输出、整型定义、二进制、位运算
-- **文件**：[class1.md](class1.md) | [class1.c](class1.c)
+- **文件**：[class1.md](course/class2026_09_21/class1.md) | [class1.c](course/class2026_09_21/class1.c)
 
 ### 第二节课
 - **日期**：2026-09-22
@@ -18,7 +18,7 @@
 - **授课**：听小昕碎碎念
 - **记录**：凡尘
 - **内容**：浮点型、输入流、复合赋值运算符、判断运算符、循环语句
-- **文件**：[class2.md](class2.md) | [class2.c](class2.c)
+- **文件**：[class2.md](course/class2026_09_22/class2.md) | [class2.c](course/class2026_09_22/class2.c)
 
 ### 第三节课
 - **日期**：2026-10-12
@@ -26,7 +26,7 @@
 - **授课**：听小昕碎碎念,USTIL实验室成员178
 - **记录**：凡尘
 - **内容**：深度学习与神经网络
-- **文件**：[class3.md](class3.md) | [class3.c](class3.c)
+- **文件**：[class3.md](course/class2026_10_12/class3.md) | [class3.c](course/class2026_10_12/class3.c)
 
 ### 第四节课
 - **日期**：2026-10-14
@@ -34,7 +34,7 @@
 - **授课**：听小昕碎碎念
 - **记录**：凡尘
 - **内容**：函数的定义、类型、声明、调用、参数传递、递归
-- **文件**：[class4.md](class4.md) | [class4.c](class4.c)
+- **文件**：[class4.md](course/class2026_10_14/class4.md) | [class4.c](course/class2026_10_14/class4.c)
 
 ## 练习题
 
@@ -44,23 +44,29 @@
 - **授课**：听小昕碎碎念
 - **记录**：凡尘
 - **内容**：循环语句应用、等比数列求和
-- **文件**：[text1.md](text1.md) | [text1.c](text1.c)
+- **文件**：[text1.md](text/text1.md) | [text1.c](text/text1.c)
 
 ## 文件结构
 ```
 .
-├── README.md         # 本索引文件
-├── .gitignore        # Git忽略配置
-├── class1.md         # 第一节课内容
-├── class1.c          # 第一节课代码
-├── class2.md         # 第二节课内容
-├── class2.c          # 第二节课代码
-├── class3.md         # 第三节课内容
-├── class3.c          # 第三节课代码
-├── class4.md         # 第四节课内容
-├── class4.c          # 第四节课代码
-├── text1.md          # 练习题内容
-└── text1.c           # 练习题代码
+├── README.md           # 本索引文件
+├── .gitignore          # Git忽略配置
+├── course/             # 课程内容目录
+│   ├── class2026_09_21/  # 第一节课
+│   │   ├── class1.md
+│   │   └── class1.c
+│   ├── class2026_09_22/  # 第二节课
+│   │   ├── class2.md
+│   │   └── class2.c
+│   ├── class2026_10_12/  # 第三节课
+│   │   ├── class3.md
+│   │   └── class3.c
+│   └── class2026_10_14/  # 第四节课
+│       ├── class4.md
+│       └── class4.c
+└── text/               # 练习题目录
+    ├── text1.md
+    └── text1.c
 ```
 
 ## 使用说明
@@ -69,11 +75,14 @@
 3. 代码部分使用C语言语法高亮
 4. 注释和说明已转换为Markdown格式
 5. 可直接在任何Markdown查看器中阅读
+6. 课程内容按日期组织在 `course/` 目录下
+7. 练习题内容组织在 `text/` 目录下
 
 ## 更新日志
 
 ### 2026-10-14
-- 添加第四节课内容（函数定义、类型、声明、调用等）
-- 添加 `.gitignore` 文件，排除可执行文件和系统文件
-- 将 `index.md` 重命名为 `README.md`
-- 添加更新日志时间
+- 重新组织目录结构，按日期分类课程内容
+- 将课程文件移至 `course/` 目录下的日期子目录
+- 将练习题文件移至 `text/` 目录
+- 更新 README.md 中的文件链接和目录结构
+- 更新第四节课日期为 2026-10-14
