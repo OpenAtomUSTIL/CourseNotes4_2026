@@ -85,9 +85,54 @@ return 返回值;
 - **值传递**：实参传递给形参的是实参的值，形参在函数中改变不会影响实参
 - **引用传递**：实参传递给形参的是实参的地址，形参在函数中改变会影响实参
 
-#### 8. 函数的递归调用
+#### 8. 函数嵌套
+
+函数在函数体内调用其他函数
+
+```c
+int getMax2(int a, int b){
+    return (a > b) ? a : b;
+}
+
+int getMax3(int a, int b, int c){
+    return getMax2(getMax2(a, b), c);  // 嵌套调用
+}
+```
+
+#### 9. 函数的递归调用
 
 函数直接或间接地调用自身
+
+```c
+int factorial(int n){
+    if(n == 1) return 1;
+    return n * factorial(n - 1);  // 递归调用
+}
+```
+
+### 二、变量
+
+#### 1. 变量的定义
+
+```c
+数据类型 变量名;
+```
+
+#### 2. 变量的初始化
+
+```c
+数据类型 变量名 = 初始值;
+```
+
+#### 3. 变量的作用域
+
+- **局部变量**：在函数体内定义的变量，作用域为函数体内
+- **全局变量**：在函数体外定义的变量，作用域为整个文件
+
+#### 4. 变量的生命周期
+
+- **局部变量**：在函数调用时创建，函数调用结束时销毁
+- **全局变量**：在程序运行时创建，程序结束时销毁
 
 ## 代码示例
 
@@ -118,14 +163,39 @@ int sum(int a, int b){
     return result;
 }
 
+// 函数嵌套示例
+int getMax2(int a, int b){
+    return (a > b) ? a : b;
+}
+
+int getMax3(int a, int b, int c){
+    return getMax2(getMax2(a, b), c);  // 嵌套调用
+}
+
+// 函数递归调用示例
+int factorial(int n){
+    if(n == 1) return 1;
+    return n * factorial(n - 1);  // 递归调用
+}
+
 int main(){
+    // 无参数无返回值函数
     halloworld();
+    // 有参数无返回值函数
     getMax(10, 20);
     getMax(30, 15);
+    // 无参数有返回值函数
     int number = getnum();
     printf("您输入的数字是: %d\n", number);
+    // 有参数有返回值函数
     int res = sum(5, 3);
     printf("5 + 3 = %d\n", res);
+    // 函数嵌套
+    int max = getMax3(10, 20, 15);
+    printf("三个数中最大值是: %d\n", max);
+    // 函数递归调用
+    int fact = factorial(5);
+    printf("5! = %d\n", fact);
     return 0;
 }
 ```
@@ -139,4 +209,10 @@ Hello World!
 请输入一个整数: 42
 您输入的数字是: 42
 5 + 3 = 8
+三个数中最大值是: 20
+5! = 120
 ```
+
+---
+**更新日志**
+- 2026-10-14: 添加函数嵌套和递归调用内容，添加变量部分
