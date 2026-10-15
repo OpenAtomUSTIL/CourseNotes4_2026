@@ -92,8 +92,18 @@
 */
 
 #include <stdio.h>
+
+//指针与数组
 void swap(int *a, int *b);
+//指针与函数
 int max(int *arr, int size);
+//指针与结构体
+struct Student{
+    int id;
+    char name[20];
+    float score;
+};
+
 int main() {
     //指针与数组
     int arr[5] = {1, 2, 3, 4, 5};
@@ -110,6 +120,10 @@ int main() {
     //写一个函数利用指针，求数组最大值
     int max_val = max(arr, 5);
     printf("Maximum value in array: %d\n", max_val);
+    //指针与结构体
+    struct Student s1 = {1, "Alice", 85.5};
+    struct Student *p_student = &s1; // 指针指向结构体变量s1
+    printf("ID: %d, Name: %s, Score: %.1f\n", p_student->id, p_student->name, p_student->score);
     return 0;
 }
 void swap(int *a, int *b){
