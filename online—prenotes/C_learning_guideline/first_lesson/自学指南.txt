@@ -1,0 +1,41 @@
+自学内容推荐↓
+项目方面的内容会由我给各位带一些比较基础的小项目。算法方面会由skytower学长给带着大家做题，同时他也负责算法方面的测试。而项目方面也会有相应的测试。各位不用有压力，如果觉得吃力还请加油。实在跟不上可以和学长沟通，如果身边有同学对上面内容感兴趣想来听听也很欢迎。有问题学长们会耐心解答的。
+下面是一些拓展的内容
+这里先叠个甲，这里只是推荐，不代表我用过也不代表我觉得好，也不代表我觉得别的不好，也不代表别的教程比这个不好。网课和教程这种东西，适合你的最重要。各位加油语言 。
+可能会有同学对于不同的语言学习感兴趣，这里贴几个学习网站，感兴趣可以自学一下玩玩。
+菜鸟教程 : runoob.com
+有多种语言和框架教学，包括常见文件格式，开发工具教程等
+廖雪峰Java教程 ：
+https://liaoxuefeng.com/books/java/introduction/index.html
+从0开始的Java教程，写的教程比较直白易懂。网站上还包含js，Python,Spring和Tomcat教程
+Python教程 ：
+https://liaoxuefeng.com/books/python/introduction/index.html
+廖老师的Python课
+https://github.com/Asabeneh/30-Days-Of-Python
+这个是一个30天学会Python的项目，适合英语好且会魔法的同学
+C++教程：
+https://www.studycpp.cn/basic/chapter0/introduction-to-site/
+JS教程 ：
+https://wangdoc.com/javascript/
+2. 计算机基础四大件数据结构与算法
+手撕数据结构 ： 【UP从0到1带你手撕数据结构全集(C语言版)】 https://www.bilibili.com/video/BV1W64y1z7jh/?share_source=copy_web&vd_source=13ee322729411ba551f8989b8205388b
+印度老哥英语版 ： https://www.bilibili.com/video/BV1Fv4y1f7T1/?share_source=copy_web&vd_source=13ee322729411ba551f8989b8205388b
+这个是一个印度裔老哥讲的一个课，嗯，适合练听力。当然讲解的很容易懂，如果对咖喱味没那么排斥可以试试
+至于算法，这里后面学长也会给各位讲，这里给各位几个比较基础的题单。感兴趣可以自己联系一下，前期更接近脑筋急转弯，如果很长时间做不出来一个题，别死磕。可以先干点别的然后再来写可能就想出来了。
+还有，用什么语言其实，无所谓的，你喜欢用什么就用什么就可以了
+顺序结构程序设计
+https://ac.nowcoder.com/acm/contest/18839?from=acdiscuss
+选择结构程序设计
+https://ac.nowcoder.com/acm/contest/19304?from=acdiscuss
+循环结构程序设计
+https://ac.nowcoder.com/acm/contest/19305?from=acdiscuss
+做完了，想要提高的可以自己找题也可以找学长要题。
+在推荐本书吧，如果能读的进去书，可以试试《大话数据结构》
+《算法导论》比较难读。适合当字典。计算机网络
+《计算机网络：自顶向下》操作系统
+《鸟哥的Linux私房菜（基本命令）》
+内核 《深入理解Linux内核》计算机组成原理， 随缘吧。比较难。
+3. 数据库
+常用的有 mysql 和 postgreSQL 有兴趣可以自己了解
+可以看 《Mysql必知必会》和《数据库基本概念》
+各位同学加油。共勉。
