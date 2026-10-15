@@ -92,13 +92,38 @@
 */
 
 #include <stdio.h>
-
+void swap(int *a, int *b);
+int max(int *arr, int size);
 int main() {
+    //指针与数组
     int arr[5] = {1, 2, 3, 4, 5};
     int *p = arr; // 指针指向数组的首元素，即arr 等价于 &arr[0]
     int i;
     for (i = 0; i < 5; i++) {
         printf("arr[%d] = %d\n", i, *(p + i)); // 使用指针访问数组元素
     }
+    //指针与函数
+    int x = 10, y = 20;
+    printf("Before swap: x = %d, y = %d\n", x, y);
+    swap(&x, &y); // 传递变量的地址给函数
+    printf("After swap: x = %d, y = %d\n", x, y);
+    //写一个函数利用指针，求数组最大值
+    int max_val = max(arr, 5);
+    printf("Maximum value in array: %d\n", max_val);
     return 0;
 }
+void swap(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}//指针s完成交换
+int max(int *arr, int size){
+    int i;
+    int max_value = *arr; // 假设第一个元素为最大值
+    for(i = 1; i < size; i++){
+        if(*(arr + i) > max_value){
+            max_value = *(arr + i); // 更新最大值
+        }
+    }
+    return max_value;
+}//指针求数组最大值
